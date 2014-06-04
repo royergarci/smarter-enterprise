@@ -1,0 +1,96 @@
+// scroll styles begin ============================================
+
+.ibm-scroll {
+	/* this is mainly for non-JS users */
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+div.ibm-scroll-wrapper {
+	position: relative;
+	width: auto !important;
+	overflow: hidden; 
+	z-index: 1;
+	padding-bottom: 15px;
+	*padding-bottom: 0;
+	_padding-bottom: 0;
+	padding-bottom: 20px\9;
+}
+
+div.ibm-scroll-container {
+	height: auto;
+	width: auto !important;
+	overflow: visible;
+	padding-right: 20px;
+	position: absolute;
+	top: 0;
+}
+
+/* Added to work fine on IE7 */
+html>body div.ibm-scroll-slider-outer {
+	background: #e6e6e6;
+	width: 6px;
+}
+
+div.ibm-scroll-slider-outer {
+	height: 100%;
+	position: absolute; 
+	top: 0px; 
+	cursor: pointer; 
+	right: 0px; 
+	top: 0; 
+	background: #E6E6E6;
+}
+
+div.ibm-scroll-slider-outer-active{
+	background: #DDD;
+}
+
+div.ibm-scroll-slider-inner {
+	position: absolute;	
+	background: #888; 
+	cursor: pointer; 
+	overflow: hidden;
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	/* height of the arrows + 1px space */
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+div.ibm-scroll-slider-inner-active{
+	background: #666; 
+}
+
+div.ibm-scroll-slider-up, div.ibm-scroll-slider-down {
+	position: absolute;
+	height: 5px;
+	background: #FFF url(#{$imagePath}/i/icons/scrollbar_arrows_sprite.png) no-repeat;
+	width: 100%;
+}
+
+div.ibm-scroll-slider-up {
+	top: 0px;
+	background-position: 0 0;
+}
+
+div.ibm-scroll-slider-outer-active div.ibm-scroll-slider-up {
+	background-position: 0 -106px;
+}
+
+div.ibm-scroll-slider-down {
+	bottom: 0px;
+	background-position: 0 -318px;
+}
+
+div.ibm-scroll-slider-outer-active div.ibm-scroll-slider-down {
+	background-position: 0 -424px;
+}
+
+/* Element shown at the bottom of the scroll container making a nice fade out */
+div.ibm-scroll-gradient{
+	position: absolute;
+	bottom: 0px;
+	height: 15px;
+	@include background-gradient(background,(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%));
+}

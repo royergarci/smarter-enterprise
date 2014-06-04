@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-ZZ" xml:lang="en-ZZ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<!-- Add meta tag to consistently detect the width on an iPad at 768px -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/"/>
+<link rel="SHORTCUT ICON" href="http://www.ibm.com/favicon.ico"/>
+<meta name="DC.Rights" content="© Copyright IBM Corp. 2011"/>
+<meta name="Keywords" content="rms tests"/>
+<meta name="DC.Date" scheme="iso8601" content="2011-08-08"/>
+<meta name="Source" content="v17 Template Generator, Template 17.02"/>
+<meta name="Security" content="Public"/>
+<meta name="Abstract" content="esdes"/>
+<meta name="IBM.Effective" scheme="W3CDTF" content="2011-01-02"/>
+<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="exse"/>
+<meta name="Owner" content="vladislav.saling@sk.ibm.com"/>
+<meta name="DC.Language" scheme="rfc1766" content="en"/>
+<meta name="IBM.Country" content="ZZ"/>
+<meta name="Robots" content="index,follow"/>
+<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="ezse"/>
+<meta name="Description" content="esdes"/>
+<meta name="DC.Subject" content="IN.F" scheme="IBM_SubjectTaxonomy">
+<meta name="IBM.WTMCategory" content="TESTAEEN" scheme="IBM_WTMCategory">
+<meta name="DC.Type" content="" scheme="IBM_ContentClassTaxonomy">
+<meta name="DataSource" content="IConS : SP_TOPIC_PAGE_TAB : O383022S52163R93">
+<meta name="Owner" content="Nathalie Chamas/United Arab Emirates/IBM">
+<link href="http://purl.org/DC/elements/1.0/" rel="schema.DC">
+<link href="http://www.ibm.com/favicon.ico" rel="SHORTCUT ICON">
+<title>IBM </title>
+<link href="../../css/ww.css" rel="stylesheet" title="www" type="text/css" />
+<link href="http://ecmpreview.webmaster.ibm.com/smarterplanet/global/files/sp-screen.css" rel="stylesheet" title="www" type="text/css">
+<link type="text/css" href="//www.ibm.com/smarterplanet/css/sp-mobile.css" rel="IBM.Mobile.stylesheet">
+<link type="text/css" title="www" rel="stylesheet" href="//1.www.s81c.com/smarterplanet/css/ae/en/sp-screen-fonts.css">
+<script type="text/javascript" src="//www.ibm.com/common/js/sp-common.js">//</script>
+<link type="text/javascript" href="/smarterplanet/global/files/sp-global-mobile.js" rel="IBM.Mobile.script">
+<script type="text/javascript" src="/smarterplanet/global/files/sp-mobile.js">//</script>
+
+<script type="text/javascript" src="//1.www.s81c.com/common/js/dojo/www.js">//</script>
+
+
+<script src="../../js/ww.js" type="text/javascript">
+	ibmweb.config.set({opinionlab: {floating: {enabled: true, type: 'overlay', hide: 3600}}});
+</script>
+<script src="../../js/ww.js" type="text/javascript">
+jQuery(document).ready(function(){
+
+jQuery('#ibm-language>a').each(function(){
+var link = jQuery(this)
+var next_step = link.attr('href').split('/');
+var country = next_step[3];
+var lang = next_step[4];
+
+var url_spilt = document.location.toString().split('smarterplanet');
+var url = url_spilt[0]+'smarterplanet';
+
+var url_split_dash = url_spilt[1].split('/');
+var split_length = url_split_dash.length;
+for(var i = 1; i <split_length; i ++){
+	if(i== 2){
+		url=url+'/'+lang;
+	}
+	else{
+		url = url+'/'+url_split_dash[i]
+	}
+}
+jQuery.ajax( {  
+       url : url,
+        dataType : "",  
+        type : 'GET',  
+        jsonpCallback : "",  
+        success : function(data,textStatus) {  
+            link.attr('href',url);
+        },  
+        error : function() {  
+            link.attr('href',url_spilt[0]+"smarterplanet/"+country+"/"+lang+"/");
+        }  
+    });  
+
+});
+							});
+</script>
+<style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
+</style>
+
+</head>
+<body id="ibm-com" class="ibm-type">
+<div id="ibm-top" class="ibm-landing-page">
+
+<!-- MASTHEAD_BEGIN -->
+<div class="ibm-access"><a href="#ibm-content">Skip to main content</a></div>
+<div id="ibm-masthead">
+<div id="ibm-mast-options">
+<ul>
+<li id="ibm-geo"><a href="http://www.ibm.com/planetwide/select/selector.html"><span class="ibm-access">Select a country/region: </span>Worldwide</a></li>
+</ul>
+</div>
+<div id="ibm-universal-nav">
+<ul id="ibm-unav-links">
+<li id="ibm-home"><a href="http://www.ibm.com/">IBM®</a></li>
+</ul>
+<ul id="ibm-menu-links">
+<li><a href="http://www.ibm.com/sitemap/">Site map</a></li>
+</ul>
+<div id="ibm-search-module">
+<form id="ibm-search-form" action="http://www.ibm.com/Search/" method="get">
+<p>
+<label for="q"><span class="ibm-access">Search</span></label>
+<input type="text" maxlength="100" value="" name="q" id="q"/>
+<input type="hidden" value="17" name="v"/>
+<input type="hidden" value="utf" name="en"/>
+<input type="hidden" value="en" name="lang"/>
+<input type="hidden" value="zz" name="cc"/>
+<input type="submit" id="ibm-search" class="ibm-btn-search" value="Submit"/>
+</p>
+</form>
+</div>
+</div>
+</div>
+<!-- MASTHEAD_END -->
+<!-- LEADSPACE_BEGIN -->
+<div id="ibm-leadspace-head" class="ibm-alternate">
+<div id="ibm-leadspace-body">
+<div class="ibm-columns">
+<div class="ibm-col-1-1">
+<h1>IBM </h1>
+</div>
+</div>
+</div>
+</div>
+<!-- LEADSPACE_END -->
+<!-- CONTENT_NAV_BEGIN -->
+<div id="ibm-content-nav">
+<div id="ibm-primary-tabs">
+<ul class="ibm-tabs">
+<li class="ibm-active"><a href="#">test</a></li>
+</ul>
+</div>
+
+</div><!-- CONTENT_NAV_END -->
+
+
+<div id="ibm-pcon">
+<!-- CONTENT_BEGIN -->
+<div id="ibm-content">
+<!-- CONTENT_BODY -->
+<div id="ibm-content-body">
+<div id="ibm-content-main">
+
+
+<!-- large -->
+
+
+<div class="ibm-media">
+	<p><a	rel="format=ribbon&amp;ribbon_columns=6&amp;youtubeMaxResults=20"
+		class="ibm-rss-link" 
+		href="http://www.youtube.com/ibm">
+			youtube channel
+	</a></p>
+</div>
+
+<div class="ibm-media">
+	<p><a	rel="format=ribbon&amp;ribbon_columns=5&amp;youtubeMaxResults=20&amp;widgetHeight=200&amp;lessLabel=hide&amp;moreLabel=show"
+		class="ibm-rss-link" 
+		style="height:200px" 
+		href="http://www.youtube.com/playlist?list=PLBEDB2503DDB865BD">
+			Scott's list
+	</a></p>
+</div>
+
+<!-- large ends -->
+
+<script type="text/javascript">
+exhibit3Overrides={
+	'HbHTvqZE3D8':{title:"This is a overridden title",description:"This is a video with a new description"}
+	};
+</script>
+<div class="ibm-media">
+	<h2>Playlist [PLAYLIST TITLE]</h2>	
+	<p><a 	rel="format=inline_medium&amp;no_hide=true&amp;overrideVar=exhibit3Overrides"
+		class="ibm-rss-link" 
+	    	href="https://www.youtube.com/ibm">
+
+			embedded youtube channel with override
+	</a></p>
+
+</div>
+
+
+
+<div class="ibm-media">
+	<p><a	rel="format=inline_large&amp;ribbon=true&amp;ribbon_columns=3&amp;youtubeMaxResults=10"
+		class="ibm-rss-link" 
+		href="//www.youtube.com/user/IBMSocialMedia">
+			No override, max results 10
+	</a></p>
+</div>
+
+
+<!-- playlists -->
+<script type="text/javascript">
+exhibit5Overrides={
+	'vicqBmAGl80':{title:"This is a overridden title",description:"This is a video with a new description"}
+	};
+</script>
+
+<div class="ibm-media">
+	<p><a 	rel="format=playlist&amp;playlist_columns=3&amp;overrideVar=exhibit5Overrides&amp;youtubeMaxResults=6"
+		class="ibm-rss-link" 
+		href="http://www.youtube.com/IBMSocialMedia">
+			Override and max 6 results
+	</a></p>
+</div>
+
+
+
+<div class="ibm-media">
+	<p><a 	rel="format=playlist&amp;playlist_columns=2&amp;youtubeMaxResults=6"
+		class="ibm-rss-link" 
+		href="https://www.youtube.com/playlist?list=PLDC0A913BC6949779">
+			youtube playlist
+	</a></p>
+
+</div>
+
+<div class="ibm-media">
+	<p><a 	rel="format=playlist&amp;youtubeMaxResults=9"
+		class="ibm-rss-link" 
+		href="//www.youtube.com/playlist?list=PLE68D45F04E3E124A&feature=plpp">
+			Another playlist
+	</a></p>
+
+</div>
+
+
+<div class="ibm-media">
+	<p><a 	rel="format=playlist&amp;youtubeVideoList=snZPevfRuus,wkryri12lKw,lpgl2Ha6Dio,n8eqhSl2otk,fsadfsadfsdf&amp;showcaptions=true&amp;overrideVar=ccTestOverrides"
+		class="ibm-rss-link" 
+		href="//www.youtube.com">
+			A list of videos
+	</a></p>
+
+</div>
+<!-- playlists -->
+
+
+
+<!-- inline small 6 -->
+<!-- we need the ibm-columns/ibm-col-6-2 thing here as this video can be added anywhere on the page! -->
+
+<div class="ibm-columns">
+<div class="ibm-col-6-2">
+	<div class="ibm-media">
+		<p><a 	rel="format=inline_small"
+			class="ibm-rss-link" 
+			href="//www.youtube.com/playlist?list=PLE68D45F04E3E124A&feature=plpp">
+				first video from a playlist
+		</a></p>
+	</div>
+</div>
+<div class="ibm-col-6-4"><p><strong>This is where other content would appear</strong><br />
+Lorem ipsum pri id quaestio sensibus indoctum. Ne vim scripta feugait inciderint. Cu vim nibh lobortis vituperata, cu minim consequat vituperatoribus eos, ubique oblique eripuit ea sit. Pri te vidit dicant epicuri, per ex nihil tation persius. Zzril iudico legimus mei cu, nam in mucius alterum, mea et ullum appareat. Ex doctus suavitate sadipscing pri, ius ex graecis iudicabit, ne malis dicat sea.</p>
+
+<p>Ex vel idque appellantur, at autem aliquyam laboramus sed. Voluptatum consectetuer eum an, id semper persequeris vel. Nec no commune iudicabit laboramus. Cum cibo choro lucilius ea. In vitae scripta qui, discere euismod copiosae cu vix, vim honestatis appellantur ut.</p>
+
+<p>Usu agam summo albucius at. Cu aeque quaeque praesent per, epicurei consetetur id quo. Qui in debet impetus. Laoreet suscipit adipisci ea has, utinam tibique interpretaris ex qui. Has debitis luptatum an, novum nominavi ex cumos.</p>
+    </div>
+</div>
+<!-- inline small 6 -->
+
+
+
+<!-- inline small 5 -->
+<!-- we need the ibm-columns/ibm-col-5-2 thing here as this video can be added anywhere on the page! -->
+<div class="ibm-columns">
+
+<div class="ibm-col-5-3">
+<p><strong>This is where other content would appear</strong></p>
+<p>Lorem ipsum pri id quaestio sensibus indoctum. Ne vim scripta feugait inciderint. Cu vim nibh lobortis vituperata, cu minim consequat vituperatoribus eos, ubique oblique eripuit ea sit. Pri te vidit dicant epicuri, per ex nihil tation persius. Zzril iudico legimus mei cu, nam in mucius alterum, mea et ullum appareat. Ex doctus suavitate sadipscing pri, ius ex graecis iudicabit, ne malis dicat sea.</p>
+
+<p>Ex vel idque appellantur, at autem aliquyam laboramus sed. Voluptatum consectetuer eum an, id semper persequeris vel. Nec no commune iudicabit laboramus. Cum cibo choro lucilius ea. In vitae scripta qui, discere euismod copiosae cu vix, vim honestatis appellantur ut.</p>
+
+<p>Usu agam summo albucius at. Cu aeque quaeque praesent per, epicurei consetetur id quo. Qui in debet impetus. Laoreet suscipit adipisci ea has, utinam tibique interpretaris ex qui. </p>
+    </div>
+<div class="ibm-col-5-2">
+	<div class="ibm-media">
+		<p><a 	rel="format=inline_small"
+			class="ibm-rss-link" 
+			href="http://www.youtube.com/playlist?list=PLE68D45F04E3E124A&feature=plpp">
+
+				Exhibit #8a - Inline small (for five column grid pages)
+		</a></p>
+	</div>
+</div>
+<script type="text/javascript">
+ccTestOverrides={
+	'wkryri12lKw':{captionurl:'http://webdev.webmaster.ibm.com/common/testpages/richmedia/nica_17012.xml'}
+	};
+</script>
+<div class="ibm-col-5-1">
+	<div class="ibm-media">
+		<p><a 	rel="format=inline_thumbnail&amp;overrideVar=ccTestOverrides&amp;showcaptions=true"
+			class="ibm-rss-link" href="http://www.youtube.com/watch?v=wkryri12lKw&list=PLAD6EEA3C161A84F1&feature=plcp&context=C43cff25FDvjVQa1PpcFO_V1xrS6K2pMcGiG4jXSoYFEjhTRmBuwE=">
+		</a></p>
+	</div>
+</div>
+
+<div class="ibm-col-5-1">
+	<div class="ibm-media">
+		<p><a 	rel="format=inline_thumbnail"
+			class="ibm-rss-link" href="http://www.youtube.com/watch?v=wkrXXX12lKw">
+		</a></p>
+	</div>
+</div>
+</div>
+
+<!-- inline small 5 -->
+
+<!-- inline small 6 -->
+<div class="ibm-columns">
+<div class="ibm-col-1-1">
+	<div class="ibm-rule">
+		<hr>
+	</div>
+</div>
+</div>
+<div class="ibm-columns">
+	<div class="ibm-col-6-1 small">
+		<p><b>It all starts with the customer</b></p>
+		<p>In business, this has always been true. But now a new breed of customer is dictating a new set of terms in the dynamic between buyers and sellers.</p>
+		<p>Customers approach a sale empowered by technology and transparency, with more extensive information from more sources than ever before.</p>
+	</div>
+	<div class="ibm-col-6-5">
+		<script type="text/javascript" src="http://smartcloudapi.ps.kaltura.com/p/102/sp/10200/embedIframeJs/uiconf_id/11601134/partner_id/102"></script>
+		<object id="kaltura_player_52c6c9f2a1e08" name="kaltura_player_52c6c9f2a1e08" type="application/x-shockwave-flash" allowfullscreen="true" allownetworking="all" allowscriptaccess="always" height="330" width="740" xmlns:dc="http://purl.org/dc/terms/" xmlns:media="http://search.yahoo.com/searchmonkey/media/" rel="media:video" resource="http://smartcloudapi.ps.kaltura.com/index.php/kwidget/wid/0_fbjxmp20/uiconf_id/11601134" data="http://smartcloudapi.ps.kaltura.com/index.php/kwidget/wid/0_fbjxmp20/uiconf_id/11601134"><param name="allowFullScreen" value="true"><param name="allowNetworking" value="all"><param name="allowScriptAccess" value="always"><param name="bgcolor" value="#000000"><param name="flashVars" value="playlistAPI.autoContinue=true&amp;playlistAPI.autoInsert=true&amp;playlistAPI.kpl0Name=IBM Notes 8 Banking Composite&amp;playlistAPI.kpl0Url=http://smartcloudapi.ps.kaltura.com%2Findex.php%2Fpartnerservices2%2Fexecuteplaylist%3Fuid%3D%26partner_id%3D102%26subp_id%3D10200%26format%3D8%26ks%3D%7Bks%7D%26playlist_id%3D0_x6scfil6&amp;"><param name="movie" value="http://smartcloudapi.ps.kaltura.com/index.php/kwidget/wid/0_fbjxmp20/uiconf_id/11601134"><a href="http://corp.kaltura.com">video platform</a> <a href="http://corp.kaltura.com/technology/video_management">video management</a> <a href="http://corp.kaltura.com/solutions/overview">video solutions</a><a href="http://corp.kaltura.com/technology/video_player">video player</a></object>
+		<param name="allowFullScreen" value="true">
+		<param name="allowNetworking" value="all">
+		<param name="allowScriptAccess" value="always">
+		<param name="bgcolor" value="#000000">
+		<param name="flashVars" value="playlistAPI.autoContinue=true&amp;playlistAPI.autoInsert=true&amp;playlistAPI.kpl0Name=IBM Notes 8 Banking Composite&amp;playlistAPI.kpl0Url=http://smartcloudapi.ps.kaltura.com%2Findex.php%2Fpartnerservices2%2Fexecuteplaylist%3Fuid%3D%26partner_id%3D102%26subp_id%3D10200%26format%3D8%26ks%3D%7Bks%7D%26playlist_id%3D0_x6scfil6&amp;">
+		<param name="movie" value="http://smartcloudapi.ps.kaltura.com/index.php/kwidget/wid/0_fbjxmp20/uiconf_id/11601134">
+		<a href="http://corp.kaltura.com">video platform</a>
+		<a href="http://corp.kaltura.com/technology/video_management">video management</a>
+		<a href="http://corp.kaltura.com/solutions/overview">video solutions</a>
+		<a href="http://corp.kaltura.com/technology/video_player">video player</a>
+		</object>
+	</div>
+</div>
+<div class="ibm-columns">
+	<div class="ibm-col-1-1">	
+		<a class="ibm-popup-link" href="#video_one" onclick="ibmweb.overlay.show('video_one',this);return false;">Play the video in an overlay</a>
+	</div>
+</div>
+
+<!-- Overlay Begins -->
+
+<div id="video_one" class="ibm-common-overlay" style="width:785px;">
+<div class="ibm-head">
+<p>
+<a href="#close" class="ibm-common-overlay-close">Close [x]</a>
+</p>
+</div>
+<div class="ibm-body">
+<div class="ibm-main" style="height:355px;">
+<div class="ibm-container ibm-alternate">
+<div class="ibm-container-body">
+<a class="ibm-access"><!-- Accessibility anchor --></a>
+
+<div class="ibm-embed-video">
+<script type="text/javascript" src="http://smartcloudapi.ps.kaltura.com/p/102/sp/10200/embedIframeJs/uiconf_id/11601134/partner_id/102"></script><object id="kaltura_player_52c6c9f2a1e08" name="kaltura_player_52c6c9f2a1e08" type="application/x-shockwave-flash" allowfullscreen="true" allownetworking="all" allowscriptaccess="always" height="330" width="740" xmlns:dc="http://purl.org/dc/terms/" xmlns:media="http://search.yahoo.com/searchmonkey/media/" rel="media:video" resource="http://smartcloudapi.ps.kaltura.com/index.php/kwidget/wid/0_fbjxmp20/uiconf_id/11601134" data="http://smartcloudapi.ps.kaltura.com/index.php/kwidget/wid/0_fbjxmp20/uiconf_id/11601134"><param name="allowFullScreen" value="true"><param name="allowNetworking" value="all"><param name="allowScriptAccess" value="always"><param name="bgcolor" value="#000000"><param name="flashVars" value="playlistAPI.autoContinue=true&amp;playlistAPI.autoInsert=true&amp;playlistAPI.autoPlay=1&amp;playlistAPI.kpl0Name=IBM Notes 8 Banking Composite&amp;playlistAPI.kpl0Url=http://smartcloudapi.ps.kaltura.com%2Findex.php%2Fpartnerservices2%2Fexecuteplaylist%3Fuid%3D%26partner_id%3D102%26subp_id%3D10200%26format%3D8%26ks%3D%7Bks%7D%26playlist_id%3D0_x6scfil6&amp;"><param name="movie" value="http://smartcloudapi.ps.kaltura.com/index.php/kwidget/wid/0_fbjxmp20/uiconf_id/11601134"><a href="http://corp.kaltura.com">video platform</a> <a href="http://corp.kaltura.com/technology/video_management">video management</a> <a href="http://corp.kaltura.com/solutions/overview">video solutions</a><a href="http://corp.kaltura.com/technology/video_player">video player</a></object>
+</div>
+</div>
+</div>
+</div>
+</div><div class="ibm-footer"></div></div>
+
+<!-- Overlay Ends -->
+
+<!-- inline small 6 -->
+
+
+<!-- inline small 7 -->
+<div class="ibm-columns">
+<div class="ibm-col-1-1">
+	<div class="ibm-rule">
+		<hr>
+	</div>
+</div>
+</div>
+
+<div class="ibm-columns">
+<div class="ibm-col-5-2 small">
+<div class="ibm-anchor-pointer"><a name="market" class="vt-p"></a></div><h2 class="ibm-sp-header">Market: personalizing the message</h2>
+
+<p>A global financial services firm uses behavioral analytics to give its customers what they want: real-time, personalized promotions through their media of choice. Studying the way  customers use the web, email, phone and social networks to research and buy enables the firm to provide  instant, targeted offers that yield high response, conversion and revenue rates.</p>
+
+<p>With powerful analytics and coordinated cross-channel marketing, personalized campaigns have become even more precise, and can be delivered through the most effective channels for each customer. Marketers are closer than ever to speaking directly to customers about products and services and delivering the best offer, automatically, with a more complete understanding of how customers interact and respond to their brands.</p>
+
+<p>A 2011 IBV study, <a href="ftp://public.dhe.ibm.com/common/ssi/ecm/en/gbe03391usen/GBE03391USEN.PDF" class="vt-p">From Social Media to Social CRM</a> <span class="ibm-item-note">(PDF, 1.2MB)</span>, underscores a perception gap between marketers and their customers and why their customers interact with their brand, specifically through social media. Customers cite tangible value—discounts and purchasing—as the top two social media activities they seek out from their trusted brands. Just feeling connected to or interacting with a brand is not enough for customers.</p>
+</div>
+<div class="ibm-col-5-3">
+<script type="text/javascript" src="http://smartcloudapi.ps.kaltura.com/p/102/sp/10200/embedIframeJs/uiconf_id/11601132/partner_id/102"></script><object id="kaltura_player_52d4423bdc0f2" name="kaltura_player_52d4423bdc0f2" type="application/x-shockwave-flash" allowfullscreen="true" allownetworking="all" allowscriptaccess="always" height="402" width="608" xmlns:dc="http://purl.org/dc/terms/" xmlns:media="http://search.yahoo.com/searchmonkey/media/" rel="media:video" resource="http://smartcloudapi.ps.kaltura.com/index.php/kwidget/wid/0_niqbs34h/uiconf_id/11601132/entry_id/0_jts0a3ms" data="http://smartcloudapi.ps.kaltura.com/index.php/kwidget/wid/0_niqbs34h/uiconf_id/11601132/entry_id/0_jts0a3ms"><param name="allowFullScreen" value="true"><param name="allowNetworking" value="all"><param name="allowScriptAccess" value="always"><param name="bgcolor" value="#000000"><param name="flashVars" value="streamerType=rtmp&amp;streamerUrl=&amp;"><param name="movie" value="http://smartcloudapi.ps.kaltura.com/index.php/kwidget/wid/0_niqbs34h/uiconf_id/11601132/entry_id/0_jts0a3ms"><a href="http://corp.kaltura.com" class="vt-p">video platform</a> <a href="http://corp.kaltura.com/technology/video_management" class="vt-p">video management</a> <a href="http://corp.kaltura.com/solutions/overview" class="vt-p">video solutions</a><a href="http://corp.kaltura.com/technology/video_player" class="vt-p">video player</a> <a rel="media:thumbnail" href="http://smartcloudapi.ps.kaltura.com/p/102/sp/10200/thumbnail/entry_id/0_jts0a3ms/version/100000/width/120/height/90/bgcolor/000000/type/2" class="vt-p"></a> <span property="dc:description" content="Kaltura's proposed integration with IBM Connections"></span> <span property="media:title" content="Kaltura and IBM Connections (proposed)"></span> <span property="media:width" content="608"></span> <span property="media:height" content="402"> </span><span property="media:type" content="application/x-shockwave-flash"></span> <span property="media:duration" content="04:13"></span></object>
+</div>
+</div>
+
+<!-- inline small 7 -->
+
+<!-- RIBBONS ONLY END -->
+
+<!-- HTML TEMPLATE SAMPLES END -->
+
+
+    
+    
+</div>
+<!-- FEATURES_BEGIN -->
+<div id="ibm-content-sidebar">
+<div id="ibm-contact-module">
+<!--IBM Contact Module-->
+</div>
+<div id="ibm-merchandising-module">
+<!--IBM Web Merchandising Module-->
+</div>
+%%sidebarspace%%
+</div>
+<!-- FEATURES_END -->
+<!-- CONTENT_BODY_END -->
+</div>
+</div>
+<!-- CONTENT_END -->
+<!-- NAVIGATION_BEGIN -->
+
+<!-- NAVIGATION_END -->
+</div>
+<div id="ibm-related-content"></div>
+
+<!-- FOOTER_BEGIN -->
+<div id="ibm-footer-module">
+</div>
+<div id="ibm-footer">
+<h2 class="ibm-access">Footer links</h2>
+<ul>
+<li><a href="http://www.ibm.com/contact/">Contact</a></li>
+<li><a href="http://www.ibm.com/privacy/">Privacy</a></li>
+<li><a href="http://www.ibm.com/legal/">Terms of use</a></li>
+</ul>
+</div>
+<!-- FOOTER_END -->
+</div>
+<div id="ibm-metrics">
+<script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>
+</div>
+</body>
+</html>

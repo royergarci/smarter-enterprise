@@ -1,0 +1,167 @@
+// variables ============================================
+
+
+// !img / font paths
+$fontPath : "//1.www.s81c.com/common/fonts";
+$imagePath : "//1.www.s81c.com/common/v17e";
+
+// !fonts
+$defaultFont : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif;
+$defaultHeaderFont : "HelveticaNeue-Bold", "HelvBoldIBM", Arial, sans-serif;
+$sectionHeaderFont : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif;
+$defaultFont-dbcs : Arial,sans-serif;
+$defaultHeaderFont-dbcs : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+
+$LubalinBook : "LubalinGraphStdBookIBM";
+$LubalinDemi : "LubalinDemiIBM";
+
+$bodyFontSize : 16px;
+$smallFontSize : $bodyFontSize * .875;
+$largeFontSize : $bodyFontSize * 1.20;
+
+$sectionHeaderSize : 36px;
+$smallHeaderSize : $sectionHeaderSize * .875;
+$largeHeaderSize : $sectionHeaderSize * 1.20;
+
+$paragraphSpacing : .333;
+$headerSpacing : .25;
+
+$defaultLineHeight : 1.35;
+$smallLineHeight : 1.20;
+$largeLineHeight : 1.5;
+
+// !grid
+$landingGrid : 980px;
+$landingSpace : 20px;
+
+// !icons
+$iconSpaceLeft : 1.4em;
+
+// !hacks
+$ie7Selector : ".dj_ie7";
+$ie8Selector : ".dj_ie8";
+$ie9Selector : ".dj_ie9";
+$ie9Hack : "\0/";
+
+// !mobile menu
+$mMenuWidth: 250px;
+$mMenuLevelIndent:  1em;
+$mSearchBoxHeight: 35px;
+$mSearchBoxBorder: 1px;
+
+
+// !Shadow effects ============================================
+
+$section-shadow : 0 5px 10px -3px #DEDEDE inset;
+$shadow-soft : 0 1px 3px rgba(0,0,0,.5);
+$shadow-hard : 0 1px 1px rgba(0,0,0,.5);
+
+// Dark text is against light background
+$emboss-light : 0 1px 0 rgba(255,255,255,.95);
+	
+// Light text is against dark background
+$emboss-dark : 0 -1px 0 rgba(0,0,0,.75);
+
+// Used when white text needs to
+$glow :	0 0 5px rgba(255,255,255,.75);
+
+
+// !mixins ============================================
+
+// Convert PX to REM
+// e.g. @include px-to-rem(font-size,11px);
+@mixin px-to-rem($style,$px) {
+	#{$style}: $px;
+	#{$style}: $px/(10px / 1rem);
+}
+
+// Add text shadow
+// e.g. @include text-shadow($glow);
+@mixin text-shadow($text...) {
+	text-shadow: $text;
+}
+
+// Apply browser prefix for border-radius
+// e.g. @include border-radius(2px);
+@mixin border-radius($borders...) {
+	-webkit-border-radius: $borders;
+	-moz-border-radius: $borders;
+	border-radius: $borders;
+}
+
+// Apply browser prefix for box-shadow
+// e.g. @include box-shadow(0 1px 0 $w30 inset, 0 1px 3px $k50);
+@mixin box-shadow($shadows...) {
+	-webkit-box-shadow: $shadows;
+	-moz-box-shadow: $shadows;
+	box-shadow: $shadows;
+}
+
+// Apply browser prefix for box-sizing
+// e.g. @include box-sizing(border-box);
+@mixin box-sizing($sizings...) {
+	-webkit-box-sizing: $sizings;
+	-moz-box-sizing: $sizings;
+	box-sizing: $sizings;
+}
+
+// Apply browser prefix for gradients
+// e.g. @include background-gradient(background-image,(top, $w10, $k40));
+@mixin background-gradient($style,$gradients...) {
+	#{$style}: -webkit-linear-gradient($gradients);
+	#{$style}: -moz-linear-gradient($gradients);
+	#{$style}: -o-linear-gradient($gradients);
+	#{$style}: -ms-linear-gradient($gradients);
+	#{$style}: linear-gradient($gradients);
+}
+
+// Apply browser prefix for background image gradients
+// e.g. @include background-image-gradient(url(#{$imagePath}/i/footermod-bg.png), no-repeat center top, top, #474A50, #0F161A);
+@mixin background-image-gradient($image-url, $image-position, $gradient-position, $gradient-color1, $gradient-color2) {
+	background: $gradient-color2;
+	background: $image-url $image-position, -webkit-linear-gradient($gradient-position, $gradient-color1, $gradient-color2);
+	background: $image-url $image-position, -moz-linear-gradient($gradient-position, $gradient-color1, $gradient-color2);
+	background: $image-url $image-position, -o-linear-gradient($gradient-position, $gradient-color1, $gradient-color2);
+	background: $image-url $image-position, -ms-linear-gradient($gradient-position, $gradient-color1, $gradient-color2);
+	background: $image-url $image-position, linear-gradient($gradient-position, $gradient-color1, $gradient-color2);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($gradient-color1)}', endColorstr='#{ie-hex-str($gradient-color2)}');	
+}
+
+// Apply browser prefix for transitions
+// e.g. @include transition(opacity 0.3s);
+@mixin transition($transitions...) {
+	-webkit-transition: $transitions;
+	-moz-transition: $transitions;
+	-o-transition: $transitions;
+	-ms-transition: $transitions;
+	transition: $transitions;
+}
+
+// Apply browser prefix for transform
+// e.g. @include transform(translate3d(0px, 0px, 0px));
+@mixin transform($transforms...) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+// Apply browser prefix for transform-origin
+// e.g. @include transform-origin(20%, 40%);
+@mixin transform-origin($origin) {
+	-webkit-transform-origin: $origin;
+	-moz-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	-o-transform-origin: $origin;
+	transform-origin: $origin;
+}
+
+// Float reset
+// e.g. @include aslett-clearing;
+@mixin aslett-clearing {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}

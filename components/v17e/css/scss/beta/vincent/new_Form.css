@@ -1,0 +1,1174 @@
+.ibm-forms {
+    font-size: 85%;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 500;
+}
+
+.ibm-forms *,
+.ibm-forms ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.ibm-forms ul.demo li { margin-bottom: 10px }
+.ibm-forms ul.demo li:last-child { margin-bottom: 10px }
+.ibm-forms input,
+.ibm-forms button,
+.ibm-forms select,
+.ibm-forms select optgroup,
+.ibm-forms textarea {
+    margin: 0;
+    outline: 0;
+    font-size: 1em;
+    line-height: normal;
+    font-family: Helvetica,Arial,sans-serif;
+    font-style: normal;
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+.ibm-forms select optgroup,
+.ibm-forms select optgroup option {
+    font-size: 1em;
+    padding: 3px;
+}
+
+.ibm-forms select optgroup,
+.ibm-forms select optgroup option {
+    font-size: 1em;
+    padding: 3px;
+}
+.ibm-forms select optgroup option { padding: 3px 8px }
+.ibm-forms button[disabled],
+.ibm-forms input[disabled] { cursor: default }
+.ibm-forms input[placeholder],
+.ibm-forms textarea[placeholder] { color: #999 }
+.ibm-forms input::-webkit-input-placeholder { opacity: .7 }
+.ibm-forms input:focus::-webkit-input-placeholder {
+    opacity: .4;
+    -webkit-transition: opacity .3s;
+}
+.ibm-forms input:-ms-input-placeholder { opacity: .7 }
+.ibm-forms input:focus:-ms-input-placeholder {
+    opacity: .4;
+    -ms-transition: opacity .3s;
+}
+.ibm-forms input:-moz-placeholder,
+input::-moz-placeholder { opacity: .7 }
+.ibm-forms input:focus:-moz-placeholder,
+.ibm-forms input:focus::-moz-placeholder {
+    opacity: .4;
+    -moz-transition: opacity .3s;
+}
+.ibm-forms button::-moz-focus-inner,
+.ibm-forms input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.ibm-forms .options,
+.ibm-forms .button,
+.ibm-forms a.button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.ibm-forms * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.ibm-forms .form-enclose {
+    background: #fff;
+    border-radius: 0 0 6px 6px;
+}
+
+.ibm-forms .form-section {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* replace section tag with div.section*/
+.ibm-forms div.section {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.ibm-forms label,
+.ibm-forms p span.infox {
+    color: #888;
+    font-size: 1em;
+}
+.ibm-forms .lbl-ui {
+    position: relative;
+    display: block;
+}
+.ibm-forms .lbl-text {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    line-height: 12px;
+    font-size: 10px;
+    display: block;
+    color: #333;
+}
+
+
+/* imitated  ibm-required*/
+.ibm-forms .lbl-text.required:after {
+    content: " *";
+    /*font-size: 15px;*/
+    color: #D9182D;
+    display: inline;
+    position: relative;
+    top: 0px;
+    left:-4px;
+}
+.ibm-forms .lbl-text.ext { margin-bottom: 10px }
+.ibm-forms span.lbl-text {
+    margin: 0;
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.ibm-forms .lbl-text.tleft,
+.ibm-forms .lbl-valign {
+    display: block;
+    padding-top: 14px;
+}
+.ibm-forms .lbl-valign.long { padding-top: 40px }
+.ibm-forms .option-group .goption,
+.ibm-forms .toggle-group .gtoggle {
+    margin-bottom: 8px;
+    margin-right: 15px;
+    display: inline-block;
+    display: inline;
+    zoom: 1;
+}
+.ibm-forms .option-group.block .goption,
+.ibm-forms .toggle-group.block .gtoggle {
+    display: block;
+    margin-right: 0;
+}
+
+
+.ibm-forms .small-caption {
+    display: block;
+    padding: 3px 5px;
+    padding-bottom: 0;
+    font-size: .95em;
+    color: #999;
+    text-transform: none;
+}
+
+.ibm-forms .append-icon,
+.ibm-forms .append-icon.art {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 100%;
+}
+.ibm-forms .append-icon span {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    color: inherit;
+    line-height: 36px;
+    position: absolute;
+    text-align: center;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    pointer-events: none;
+}
+.ibm-forms .append-icon span i {
+    position: relative;
+    font-size: 14px;
+    font-style: normal;
+}
+.ibm-forms .append-icon.art span {
+    left: auto;
+    right: 0;
+}
+.ibm-forms .append-icon .input,
+.ibm-forms .append-icon .textarea { padding-left: 30px }
+.ibm-forms .append-icon.art .input,
+.ibm-forms .append-icon.art .textarea {
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+.ibm-forms .form-buttons.align-center { text-align: center }
+.ibm-forms .form-buttons.align-right { text-align: right }
+.ibm-forms .form-buttons .button {
+    margin-right: 10px;
+    text-align: center;
+}
+.ibm-forms .form-buttons.align-right .button {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.ibm-forms .input,
+.ibm-forms .valid,
+.ibm-forms .rating,
+.ibm-forms .select,
+.ibm-forms .button,
+.ibm-forms .invalid,
+.ibm-forms .options,
+.ibm-forms .textarea,
+.ibm-forms .info-tip,
+.ibm-forms .file-input,
+.ibm-forms .notification,
+.ibm-forms .toggle-switch,
+.ibm-forms .select-multiple,
+.ibm-forms .select-multiple>select {
+    position: relative;
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.ibm-forms .input,
+.ibm-forms .valid,
+.ibm-forms .select,
+.ibm-forms .invalid,
+.ibm-forms .textarea,
+.ibm-forms .file-input,
+.ibm-forms .notification,
+.ibm-forms .select-multiple>select {
+    width: 100%;
+    vertical-align: top;
+}
+
+.ibm-forms .input,
+.ibm-forms .textarea {
+    height: 36px;
+    color: #333;
+    padding: 0 10px;
+    background: #fff;
+    border: 1px solid;
+    border-color: #bbb;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.15);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.15);
+    -ms-box-shadow: inset 0 1px 3px rgba(0,0,0,0.15);
+    -o-box-shadow: inset 0 1px 3px rgba(0,0,0,0.15);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.15);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.ibm-forms .input:focus,
+.ibm-forms .textarea:focus,
+.ibm-forms .select-multiple>select:focus {
+    border-color: #6baced;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.15),0 0 8px rgba(82,168,236,.7);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.15),0 0 8px rgba(82,168,236,.7);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.15),0 0 8px rgba(82,168,236,.7);
+}
+.ibm-forms .textarea {
+    padding: 10px;
+    overflow: auto;
+    line-height: 20px;
+    min-height: 140px;
+    max-width: 100%;
+    resize: vertical;
+}
+
+.ibm-forms .textarea.auto { height: auto !important }
+.ibm-forms .textarea.no-resize { resize: none }
+.ibm-forms .invalid>.input,
+.ibm-forms .invalid>.textarea {
+    color: #8f2424;
+    background: #faebeb;
+    border: 1px solid #db6c6c;
+}
+.ibm-forms .valid>.input,
+.ibm-forms .valid>.textarea {
+    color: #1a719d;
+    background: #ebf7fc;
+    border: 1px solid #3ea9df;
+}
+.ibm-forms .valid>.input:focus,
+.ibm-forms .invalid>.input:focus {
+    position: relative;
+    z-index: 2;
+}
+.ibm-forms .valid:before,
+.ibm-forms .search:after,
+.ibm-forms .invalid:after,
+.ibm-forms .search:before,
+.ibm-forms .invalid:before,
+.ibm-forms .select:before,
+.ibm-forms .select:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+}
+.ibm-forms .valid:before {
+    top: 13px;
+    right: 12px;
+    width: 10px;
+    height: 4px;
+    border: solid #069;
+    border-width: 0 0 3px 3px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.ibm-forms .invalid:before,
+.ibm-forms .invalid:after {
+    top: 13px;
+    right: 16px;
+    width: 3px;
+    height: 12px;
+    background: #c06;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.ibm-forms .invalid:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.ibm-forms .valid.success>.input,
+.ibm-forms .invalid.error>.input { text-shadow: 0 1px rgba(255,255,255,0.7) }
+.ibm-forms .valid.success>.input {
+    color: #435c26;
+    background: #e2fbca;
+    border-color: #92c058;
+}
+.ibm-forms .valid.success>.input:focus {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.15),0 0 8px rgba(121,185,0,.7);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.15),0 0 8px rgba(121,185,0,.7);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.15),0 0 8px rgba(121,185,0,.7);
+}
+.ibm-forms .invalid>.input:focus {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.15),0 0 8px rgba(228,70,52,0,.7);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.15),0 0 8px rgba(228,70,52,0,.7);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.15),0 0 8px rgba(228,70,52,.7);
+}
+.ibm-forms .invalid.error>.input {
+    color: maroon;
+    background: #fcdacd;
+    border-color: #e44634;
+}
+.ibm-forms .valid.success:before { border-color: #4f8e28 }
+.ibm-forms .invalid.error:before,
+.ibm-forms .invalid.error:after { background: #ad3925 }
+.ibm-forms input[type=search] { -webkit-appearance: textfield }
+.ibm-forms input[type="search"]::-webkit-search-decoration,
+.ibm-forms input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none }
+
+.ibm-forms .search.grey input[type="search"] { background: #f2f2f2 }
+.ibm-forms .search.round>.input,
+.ibm-forms .search.round>.button { border-radius: 5em }
+.ibm-forms .search.round>.button { border-radius: 0 5em 5em 0 }
+.ibm-forms .select,
+.ibm-forms .button,
+.ibm-forms a.button,
+.ibm-forms input:checked+.radio,
+.ibm-forms input:checked+.checkbox,
+.ibm-forms .toggle-switch>label:before,
+.ibm-forms .bubble {
+    border: 1px solid #bbb;
+    background-color: #fafafa;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+    background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
+    background-image: -o-linear-gradient(top,#fff,#e6e6e6);
+    background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.ibm-forms .select:hover,
+.ibm-forms .select:focus,
+.ibm-forms .button:hover,
+.ibm-forms .button:focus,
+.ibm-forms a.button:hover,
+.ibm-forms a.button:focus {
+    border: 1px solid #8fafc9;
+    background-color: #e8eff4;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#dae5ed));
+    background-image: -webkit-linear-gradient(#fff,#dae5ed);
+    background-image: -moz-linear-gradient(#fff,#dae5ed);
+    background-image: -o-linear-gradient(#fff,#dae5ed);
+    background-image: linear-gradient(to bottom,#fff,#dae5ed);
+}
+.ibm-forms .select:hover,
+.ibm-forms .select:focus { background-color: #fff }
+.ibm-forms .select {
+    height: 36px;
+    overflow: hidden;
+    -webkit-box-shadow: inset 0 1px #fff,inset 0 0 0 1px rgba(255,255,255,0.5),0 1px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0 1px #fff,inset 0 0 0 1px rgba(255,255,255,0.5),0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px #fff,inset 0 0 0 1px rgba(255,255,255,0.5),0 1px 2px rgba(0,0,0,0.1);
+    text-shadow: 0 1px rgba(255,255,255,0.7);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.ibm-forms .select>select {
+    margin: 0;
+    border: 0;
+    width: 130%;
+    height: 33px;
+    padding: 8px;
+    color: #666;
+    display: block;
+    position: relative;
+    text-shadow: 0 1px white;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: normal;
+    text-indent: .01px;
+    text-overflow: '';
+}
+.ibm-forms .select>select::-ms-expand { display: none }
+.ibm-forms .select>select>option { padding: 3px 5px }
+.ibm-forms .select>select:focus {
+    z-index: 2;
+    width: 100%;
+    -webkit-box-shadow: inset 0 0 4px #51b5fb,0 0 4px #51b5fb;
+    -moz-box-shadow: inset 0 0 4px #51b5fb,0 0 4px #51b5fb;
+    box-shadow: inset 0 0 4px #51b5fb,0 0 4px #51b5fb;
+}
+.ibm-forms .select:hover,
+.ibm-forms .select:focus {
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2),inset 0 0 3px #fff;
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2),inset 0 0 3px #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2),inset 0 0 3px #fff;
+    color: #314f64;
+    z-index: 1;
+}
+.ibm-forms .select option { text-shadow: none }
+.ibm-forms .select:before,
+.ibm-forms .select:after {
+    top: 35%;
+    width: 0;
+    height: 0;
+    right: 10px;
+    border: 4px dashed;
+    pointer-events: none;
+    border-color: #777 transparent;
+}
+.ibm-forms .select:before {
+    border-bottom-style: solid;
+    border-top: 0;
+}
+.ibm-forms .select:after {
+    margin-top: 6px;
+    border-top-style: solid;
+    border-bottom: 0;
+}
+
+
+.ibm-forms .options {
+    top: -1px;
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+}
+.ibm-forms .options+label {
+    padding-left: 4px;
+    padding-right: 10px;
+}
+.ibm-forms .options>input {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+    left: 0;
+}
+.ibm-forms .radio,
+.ibm-forms .checkbox {
+    display: block;
+    height: 100%;
+    background: #fff;
+    border: 1px solid;
+    border-color: #bbb;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.15),0 1px rgba(255,255,255,0.7);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.15),0 1px rgba(255,255,255,0.7);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.15),0 1px rgba(255,255,255,0.7);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.ibm-forms .checkbox:before,
+.ibm-forms .radio:before {
+    content: '';
+    display: none;
+}
+.ibm-forms input:checked+.checkbox,
+.ibm-forms input:checked+.radio {
+    -webkit-box-shadow: inset 0 1px #fbfbfb,0 1px 1px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0 1px #fbfbfb,0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px #fbfbfb,0 1px 1px rgba(0,0,0,0.05);
+}
+.ibm-forms input:checked+.checkbox:before,
+.ibm-forms input:checked+.radio:before { display: block }
+.ibm-forms input:focus+.checkbox,
+.ibm-forms input:focus+.radio {
+    border-color: #4496e7;
+    -webkit-box-shadow: inset 0 0 2px rgba(81,181,251,0.8),0 0 3px rgba(81,181,251,0.8);
+    -moz-box-shadow: inset 0 0 2px rgba(81,181,251,0.8),0 0 3px rgba(81,181,251,0.8);
+    box-shadow: inset 0 0 2px rgba(81,181,251,0.8),0 0 3px rgba(81,181,251,0.8);
+}
+.ibm-forms .checkbox:before {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 7px;
+    height: 3px;
+    border: solid #999;
+    border-width: 0 0 3px 3px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.ibm-forms .radio { border-radius: 18px }
+.ibm-forms .radio:before {
+    margin: 5px;
+    width: 6px;
+    height: 6px;
+    background: #999;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px rgba(0,0,0,0.1);
+}
+
+.ibm-forms .file-input { margin: 0 }
+.ibm-forms .file-input .button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    height: 36px;
+    margin: 0;
+    padding: 0 16px;
+    line-height: 35px;
+    box-shadow: none;
+    z-index: 2;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-topleft: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.ibm-forms .file-input .button:hover { box-shadow: none }
+.ibm-forms .file-input .button:active {
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.15),0 1px rgba(255,255,255,0.1);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.15),0 1px rgba(255,255,255,0.1);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.15),0 1px rgba(255,255,255,0.1);
+}
+.ibm-forms .file-input .button input {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    padding: 0;
+    font-size: 30px;
+    height: 35px;
+    cursor: pointer;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: 'alpha(opacity=0)';
+    z-index: 3;
+}
+
+.ibm-forms .rating { overflow: hidden }
+.ibm-forms .rating.block {
+    display: block;
+    margin-top: 5px;
+}
+.ibm-forms .rating label { color: #d0d0d0 }
+.ibm-forms .rating label i {
+    font-size: 17px;
+    text-align: center;
+    color: inherit;
+}
+.ibm-forms .rating-star { margin-left: 4px }
+.ibm-forms .rating-input {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+}
+.ibm-forms .rating:hover .rating-star:hover,
+.ibm-forms .rating:hover .rating-star:hover ~ .rating-star,
+.ibm-forms .rating-input:checked ~ .rating-star { color: #ffb400 }
+.ibm-forms .rating-star,
+.ibm-forms .rating:hover .rating-star {
+    width: 18px;
+    height: 18px;
+    float: right;
+    display: block;
+    cursor: pointer;
+    color: #d0d0d0;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    color: #00649d;
+    font-family: 'iconsIBM';
+    font-variant: normal;
+    text-transform: none;
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: normal;
+    font-style: normal;
+    /*-webkit-font-smoothing: antialiased;*/
+}
+
+.icon-star:before { 
+    content: "\00a0\f139\00a0";
+    
+}
+
+.ibm-forms .rating-input:checked ~ .rating-star .icon-star:before{
+    content: "\00a0\f13a\00a0";
+}
+
+.ibm-forms .button i { font-size: 14px }
+.ibm-forms .button,
+.ibm-forms a.button {
+    outline: 0;
+    width: auto;
+    height: 36px;
+    color: #4b5151;
+    line-height: 1;
+    padding: 0 15px;
+    cursor: pointer;
+    font-size: 13px;
+    overflow: visible;
+    text-align: center;
+    vertical-align: top;
+    -webkit-box-shadow: inset 0 1px #fff,inset 0 0 0 1px rgba(255,255,255,0.5),0 1px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0 1px #fff,inset 0 0 0 1px rgba(255,255,255,0.5),0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px #fff,inset 0 0 0 1px rgba(255,255,255,0.5),0 1px 2px rgba(0,0,0,0.1);
+    text-shadow: 0 1px rgba(255,255,255,0.7);
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-touch-callout: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.ibm-forms a.button {
+    line-height: 36px;
+    text-decoration: none;
+}
+.ibm-forms .button:hover,
+.ibm-forms .button:focus,
+.ibm-forms a.button:hover,
+.ibm-forms a.button:focus {
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2),inset 0 0 3px #fff;
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2),inset 0 0 3px #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2),inset 0 0 3px #fff;
+    color: #314f64;
+}
+.ibm-forms .button:active,
+.ibm-forms .button.active,
+.ibm-forms a.button:active,
+.ibm-forms a.button.active,
+.ibm-forms .button.next-btn:active,
+.ibm-forms .button.prev-btn:active {
+    background-color: #e8e8e8;
+    border-color: #bfbfbf #bfbfbf #d6d6d6;
+    background-image: -webkit-linear-gradient(top,#e8e8e8,#fff);
+    background-image: -moz-linear-gradient(top,#e8e8e8,#fff);
+    background-image: -o-linear-gradient(top,#e8e8e8,#fff);
+    background-image: linear-gradient(to bottom,#e8e8e8,#fff);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.15),0 1px rgba(255,255,255,0.1);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.15),0 1px rgba(255,255,255,0.1);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.15),0 1px rgba(255,255,255,0.1);
+}
+.ibm-forms .button.blue,
+.ibm-forms .button.blue:hover,
+.ibm-forms .button.green,
+.ibm-forms .button.green:hover,
+.ibm-forms .button.red,
+.ibm-forms .button.red:hover,
+.ibm-forms .button.black,
+.ibm-forms .button.black:hover {
+    color: #fff;
+    text-shadow: 0 -1px rgba(0,0,0,0.15);
+    -webkit-box-shadow: inset 0 1px rgba(255,255,255,0.2),inset 0 0 0 1px rgba(255,255,255,0.1),0 1px 1px rgba(0,0,0,0.06);
+    -moz-box-shadow: inset 0 1px rgba(255,255,255,0.2),inset 0 0 0 1px rgba(255,255,255,0.1),0 1px 1px rgba(0,0,0,0.06);
+    box-shadow: inset 0 1px rgba(255,255,255,0.2),inset 0 0 0 1px rgba(255,255,255,0.1),0 1px 1px rgba(0,0,0,0.06);
+}
+.ibm-forms .button.blue:hover,
+.ibm-forms .button.blue:focus,
+.ibm-forms .button.blue:active,
+.ibm-forms .button.green:hover,
+.ibm-forms .button.green:focus,
+.ibm-forms .button.green:active,
+.ibm-forms .button.red:hover,
+.ibm-forms .button.red:focus,
+.ibm-forms .button.red:active,
+.ibm-forms .button.black:hover,
+.ibm-forms .button.black:focus,
+.ibm-forms .button.black:active { color: #fff }
+.ibm-forms .button.blue:active,
+.ibm-forms .button.green:active,
+.ibm-forms .button.red:active,
+.ibm-forms .button.black:active {
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.2),0 1px rgba(255,255,255,0.1);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.2),0 1px rgba(255,255,255,0.1);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2),0 1px rgba(255,255,255,0.1);
+}
+.ibm-forms .button.blue,
+.ibm-forms .bubble.blue {
+    background-color: #208ed3;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#4baadc),color-stop(100%,#074dda));
+    background-image: -webkit-linear-gradient(top,#4baadc,#074dda);
+    background-image: -moz-linear-gradient(top,#4baadc,#074dda);
+    background-image: -o-linear-gradient(top,#4baadc,#074dda);
+    background-image: -ms-linear-gradient(top,#4baadc,#074dda);
+    background-image: linear-gradient(to bottom,#4baadc,#074dda);
+    border-color: #1f58cc #1b4db3 #1b4db3;
+}
+.ibm-forms .button.blue:hover,
+.ibm-forms .button.blue:focus {
+    background-color: #1e55c8;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#2160de),color-stop(100%,#1e55c8));
+    background-image: -webkit-linear-gradient(top,#2160de,#1e55c8);
+    background-image: -moz-linear-gradient(top,#2160de,#1e55c8);
+    background-image: -o-linear-gradient(top,#2160de,#1e55c8);
+    background-image: -ms-linear-gradient(top,#2160de,#1e55c8);
+    background-image: linear-gradient(to bottom,#2160de,#1e55c8);
+    border-color: #174299 #174299 #174299;
+}
+.ibm-forms .button.blue:active {
+    background-color: #0d4dc1;
+    border-color: #0f3779 #0d4dc1 #0f58e1;
+    background-image: -webkit-linear-gradient(top,#0d4dc1,#48a4ff);
+    background-image: -moz-linear-gradient(top,#0d4dc1,#48a4ff);
+    background-image: -o-linear-gradient(top,#0d4dc1,#48a4ff);
+    background-image: linear-gradient(to bottom,#0d4dc1,#48a4ff);
+}
+.ibm-forms .button.green,
+.ibm-forms .bubble.green {
+    background-color: #7fbf4d;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#a1d254),color-stop(100%,#63a62f));
+    background-image: -webkit-linear-gradient(top,#a1d254,#63a62f);
+    background-image: -moz-linear-gradient(top,#a1d254,#63a62f);
+    background-image: -ms-linear-gradient(top,#a1d254,#63a62f);
+    background-image: -o-linear-gradient(top,#a1d254,#63a62f);
+    background-image: linear-gradient(to bottom,#a1d254,#63a62f);
+    text-shadow: 0 -1px 0 #4c9021;
+    border: 1px solid #457621;
+    border-top: 1px solid #5b992b;
+}
+.ibm-forms .button.green:hover,
+.ibm-forms .button.green:focus {
+    background-color: #76b347;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#76b347),color-stop(100%,#5e9e2e));
+    background-image: -webkit-linear-gradient(top,#76b347,#5e9e2e);
+    background-image: -moz-linear-gradient(top,#76b347,#5e9e2e);
+    background-image: -ms-linear-gradient(top,#76b347,#5e9e2e);
+    background-image: -o-linear-gradient(top,#76b347,#5e9e2e);
+    background-image: linear-gradient(to bottom,#76b347,#5e9e2e);
+    border: 1px solid #457621;
+    border-top: 1px solid #5b992b;
+}
+.ibm-forms .button.green:active {
+    background-color: #548e28;
+    border-color: #678f3a #75a143 #81b049;
+    background-image: -webkit-linear-gradient(top,#71b533,#a7d757);
+    background-image: -moz-linear-gradient(top,#71b533,#a7d757);
+    background-image: -o-linear-gradient(top,#71b533,#a7d757);
+    background-image: linear-gradient(to bottom,#71b533,#a7d757);
+}
+.ibm-forms .button.red,
+.ibm-forms .bubble.red {
+    background-color: #cf3025;
+    border-color: #be1814 #ac1612 #ac1612;
+    background-image: -webkit-linear-gradient(top,#fc4138,#cf3025);
+    background-image: -moz-linear-gradient(top,#fc4138,#cf3025);
+    background-image: -o-linear-gradient(top,#fc4138,#cf3025);
+    background-image: linear-gradient(to bottom,#fc4138,#cf3025);
+}
+.ibm-forms .button.red:hover,
+.ibm-forms .button.red:focus {
+    background-color: #bc2d21;
+    border-color: #be1814 #ac1612 #ac1612;
+    background-image: -webkit-linear-gradient(top,#f81003,#bc2d21);
+    background-image: -moz-linear-gradient(top,#f81003,#bc2d21);
+    background-image: -o-linear-gradient(top,#f81003,#bc2d21);
+    background-image: linear-gradient(to bottom,#f81003,#bc2d21);
+}
+.ibm-forms .button.red:active {
+    background-color: #a60000;
+    border-color: #a60000 #c10000 #e14a42;
+    background-image: -webkit-linear-gradient(top,#d00,#f96);
+    background-image: -moz-linear-gradient(top,#d00,#f96);
+    background-image: -o-linear-gradient(top,#d00,#f96);
+    background-image: linear-gradient(to bottom,#d00,#f96);
+}
+.ibm-forms .button.black,
+.ibm-forms .bubble.black {
+    background-color: #333;
+    border-color: #3e3e3e #222 #030303;
+    background-image: -webkit-linear-gradient(top,#4f4f4f,#181818);
+    background-image: -moz-linear-gradient(top,#4f4f4f,#181818);
+    background-image: -o-linear-gradient(top,#4f4f4f,#181818);
+    background-image: linear-gradient(to bottom,#4f4f4f,#181818);
+    -webkit-box-shadow: inset 0 1px rgba(255,255,255,0.03),inset 0 0 0 1px rgba(255,255,255,0.1),0 1px 1px rgba(0,0,0,0.06);
+    -moz-box-shadow: inset 0 1px rgba(255,255,255,0.03),inset 0 0 0 1px rgba(255,255,255,0.1),0 1px 1px rgba(0,0,0,0.06);
+    box-shadow: inset 0 1px rgba(255,255,255,0.03),inset 0 0 0 1px rgba(255,255,255,0.1),0 1px 1px rgba(0,0,0,0.06);
+}
+.ibm-forms .button.black:hover,
+.ibm-forms .button.black:focus {
+    background-color: #111;
+    background-image: -webkit-linear-gradient(top,#333,#111);
+    background-image: -moz-linear-gradient(top,#333,#111);
+    background-image: -o-linear-gradient(top,#333,#111);
+    background-image: linear-gradient(to bottom,#333,#111);
+    border: 1px solid #2c2b2b;
+}
+.ibm-forms .button.black:active {
+    background-color: #070707;
+    background-image: -webkit-linear-gradient(top,#070707,#444);
+    background-image: -moz-linear-gradient(top,#070707,#444);
+    background-image: -o-linear-gradient(top,#070707,#444);
+    background-image: linear-gradient(to bottom,#070707,#444);
+    border: 1px solid #2c2b2b;
+}
+
+/**/
+.row:before,
+.row:after {
+    content: '';
+    display: table;
+}
+.row:after { clear: both }
+.row { zoom: 1 }
+.row {
+    width: 100%;
+    margin: 0 auto;
+}
+/**/
+
+
+
+/*adpating IBM grid into forms*/
+.ibm-forms .ibm-col-6-1, 
+.ibm-forms .ibm-col-6-2,
+.ibm-forms .ibm-col-6-3,
+.ibm-forms .ibm-col-6-4,
+.ibm-forms .ibm-col-6-5 {
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    float: left;
+    font-size:12px;
+    line-height: 14px;
+}
+
+.ibm-forms .ibm-col-6-1.first, 
+.ibm-forms .ibm-col-6-2.first,
+.ibm-forms .ibm-col-6-3.first,
+.ibm-forms .ibm-col-6-4.first,
+.ibm-forms .ibm-col-6-5.first{
+    padding-left: 0;
+    position: relative;
+}
+
+.ibm-forms .ibm-col-6-1.last, 
+.ibm-forms .ibm-col-6-2.last,
+.ibm-forms .ibm-col-6-3.last,
+.ibm-forms .ibm-col-6-4.last,
+.ibm-forms .ibm-col-6-5.last{
+    padding-right: 0;
+    position: relative;
+}
+
+.ibm-forms .info-tip {
+    vertical-align: middle;
+    *vertical-align: auto;
+    overflow: hidden;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    left: 2px;
+    top: -2px;
+    width: 18px;
+    height: 18px;
+    color: #FFF;
+    line-height: 19px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background: #00649d;
+    text-decoration: none;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    cursor: help;
+}
+.ibm-forms .info-tip span {
+    border: 0;
+    opacity: 0;
+    width: 15em;
+    color: #fff;
+    display: block;
+    position: absolute;
+    left: -10px;
+    bottom: 2.2em;
+    z-index: 99;
+    text-align: left;
+    font-weight: normal;
+    font-size: 11px;
+    padding: 1em 1em;
+    margin-top: 20px;
+    background: #333;
+    background: rgba(0,0,0,.8);
+    -webkit-box-shadow: 0 -3px 5px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0 -3px 5px rgba(0,0,0,0.34);
+    box-shadow: 0 -3px 5px rgba(0,0,0,0.34);
+    -webkit-transition: margin .6s,opacity .6s;
+    -moz-transition: margin .6s,opacity .6s;
+    -ms-transition: margin .6s,opacity .6s;
+    -o-transition: margin .6s,opacity .6s;
+    transition: margin .6s,opacity .6s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.ibm-forms .info-tip span:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 13px;
+    border-top: 6px solid #333;
+    border-top: 6px solid rgba(0,0,0,0.8);
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+.ibm-forms .info-tip:hover,
+.ibm-forms .info-tip:active,
+.ibm-forms .info-tip:focus {
+    overflow: visible;
+    background: #000;
+}
+.ibm-forms .info-tip:hover span,
+.ibm-forms .info-tip:active span,
+.ibm-forms .info-tip:focus span {
+    opacity: 1;
+    margin-top: 0;
+}
+
+.ibm-forms .tooltip {
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    color: #fff;
+    width: 200px;
+    left: -9999px;
+    top: auto;
+    font-size: 11px;
+    background: #333;
+    background: rgba(0,0,0,0.8);
+    -webkit-transition: margin .6s,opacity .6s;
+    -moz-transition: margin .6s,opacity .6s;
+    -ms-transition: margin .6s,opacity .6s;
+    -o-transition: margin .6s,opacity .6s;
+    transition: margin .6s,opacity .6s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.ibm-forms .tooltip>em {
+    padding: 10px;
+    font-style: normal;
+    display: block;
+    position: static;
+}
+.ibm-forms .tooltip:after {
+    content: '';
+    position: absolute;
+}
+.ibm-forms .input:focus+.tooltip,
+.ibm-forms .textarea:focus+.tooltip { opacity: 1 }
+.ibm-forms .tooltip.left {
+    top: 1px;
+    margin-right: -20px;
+}
+.ibm-forms .tooltip.left:after {
+    top: 12px;
+    left: 100%;
+    border-left: 6px solid #333;
+    border-left: 6px solid rgba(0,0,0,0.8);
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+}
+.ibm-forms .input:focus+.tooltip.left,
+.ibm-forms .textarea:focus+.tooltip.left {
+    right: 100%;
+    left: auto;
+    margin-right: 5px;
+}
+.ibm-forms .tooltip.right {
+    top: 1px;
+    margin-left: -20px;
+}
+.ibm-forms .tooltip.right:after {
+    top: 12px;
+    right: 100%;
+    border-right: 6px solid #333;
+    border-right: 6px solid rgba(0,0,0,0.8);
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+}
+.ibm-forms .input:focus+.tooltip.right,
+.ibm-forms .textarea:focus+.tooltip.right {
+    left: 100%;
+    margin-left: 5px;
+}
+.ibm-forms .tooltip.right-top {
+    bottom: 100%;
+    margin-bottom: -20px;
+}
+.ibm-forms .tooltip.right-top:after {
+    top: 100%;
+    right: 12px;
+    border-top: 6px solid #333;
+    border-top: 6px solid rgba(0,0,0,0.8);
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+.ibm-forms .input:focus+.tooltip.right-top,
+.ibm-forms .textarea:focus+.tooltip.right-top {
+    right: 0;
+    left: auto;
+    margin-bottom: 10px;
+}
+.ibm-forms .tooltip.left-top {
+    bottom: 100%;
+    margin-bottom: -20px;
+}
+.ibm-forms .tooltip.left-top:after {
+    top: 100%;
+    left: 12px;
+    border-top: 6px solid #333;
+    border-top: 6px solid rgba(0,0,0,0.8);
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+.ibm-forms .input:focus+.tooltip.left-top,
+.ibm-forms .textarea:focus+.tooltip.left-top {
+    left: 0;
+    right: auto;
+    margin-bottom: 10px;
+}
+.ibm-forms .tooltip.right-bottom {
+    top: 100%;
+    margin-top: -20px;
+}
+.ibm-forms .tooltip.right-bottom:after {
+    bottom: 100%;
+    right: 12px;
+    border-bottom: 6px solid #333;
+    border-bottom: 6px solid rgba(0,0,0,0.8);
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+.ibm-forms .input:focus+.tooltip.right-bottom,
+.ibm-forms .textarea:focus+.tooltip.right-bottom {
+    right: 0;
+    left: auto;
+    margin-top: 10px;
+}
+.ibm-forms .tooltip.left-bottom {
+    top: 100%;
+    margin-top: -20px;
+}
+.ibm-forms .tooltip.left-bottom:after {
+    bottom: 100%;
+    left: 12px;
+    border-bottom: 6px solid #333;
+    border-bottom: 6px solid rgba(0,0,0,0.8);
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+.ibm-forms .input:focus+.tooltip.left-bottom,
+.ibm-forms .textarea:focus+.tooltip.left-bottom {
+    right: auto;
+    left: 0;
+    margin-top: 10px;
+}
+
+.ibm-forms .tooltip,
+.ibm-forms .info-tip {
+    text-shadow: none;
+}
+
+.ibm-forms .ibm-email-link:before,
+.ibm-forms .ibm-phone-link:before,
+.ibm-forms .ibm-external-link:before,
+.ibm-forms .ibm-chat-link:before{
+    position: inherit;
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    .ibm-forms .ibm-col-6-1, 
+    .ibm-forms .ibm-col-6-2,
+    .ibm-forms .ibm-col-6-3,
+    .ibm-forms .ibm-col-6-4,
+    .ibm-forms .ibm-col-6-5 {
+        width: 100%;
+        min-height: 1px;
+        padding-left: 0;
+        padding-right: 0;
+        float: none;
+    }
+    .ibm-forms .lbl-text.tleft { padding-top: 0 }
+    .ibm-forms .lbl-valign,
+    .ibm-forms .lbl-valign.long { padding-top: 8px }
+}
+@media screen and (max-width:380px) { 
+    .ibm-forms .form-buttons { text-align: center }
+    .ibm-forms .form-buttons .button {
+        width: 100%;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .ibm-forms span.lbl-text {
+        width: 100%;
+        text-align: right;
+    }
+}

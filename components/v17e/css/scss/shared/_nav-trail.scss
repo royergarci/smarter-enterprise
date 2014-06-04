@@ -1,0 +1,37 @@
+ul#ibm-navigation-trail {
+    height: 1%;
+    text-shadow: none;
+    padding: 10px 20px 0;
+    position: relative#{$ie9Hack};
+    *position: relative;
+}
+
+ul#ibm-navigation-trail:after {
+	@include aslett-clearing;
+}
+
+#ibm-content-head ul#ibm-navigation-trail li.ibm-first,
+#ibm-content-head ul#ibm-navigation-trail li:first-child {
+	padding-left: 0;
+}
+
+ul#ibm-navigation-trail li {
+    display: inline;
+    float: left;
+	clear: none;
+    padding: 0 16px 0 2px;
+}
+
+ul#ibm-navigation-trail li a:link,
+ul#ibm-navigation-trail li a:visited {
+    color: #666;
+}
+
+.ibm-alternate-background ul#ibm-navigation-trail li a,
+.ibm-alternate-bg.ibm-ribbon ul#ibm-navigation-trail li a {
+    color: #BBB;
+}
+
+#ibm-content-head #ibm-navigation-trail + h1 {
+	padding-top: 0;
+}

@@ -1,0 +1,142 @@
+// rightnav styles begin ============================================
+
+#ibm-content-sidebar {
+	margin: 0 0 0 586px;
+    overflow: hidden;
+    width: 172px;
+}
+
+.ibm-liquid #ibm-content-sidebar {
+	float: left;
+	margin: 0 -202px 0 0;
+	padding-left: 10px;
+}
+.ibm-landing-page #ibm-content-sidebar {
+	margin: 0 0 0 740px;
+}
+#ibm-content-sidebar .ibm-container {
+	clear: right;
+}
+
+#ibm-content-sidebar p,
+#ibm-content-sidebar ul {
+	color: #666;
+	margin: 0;
+}
+
+#ibm-content-sidebar h2 {
+	color:#333;
+}
+
+#ibm-content-sidebar .ibm-container .ibm-container-body img {
+	display: block;
+	clear: both;
+	margin: 0 auto 4px;
+	text-align: center;
+}
+
+#ibm-content-sidebar .ibm-container.ibm-alternate .ibm-container-body {
+	border-width: 0;
+}
+
+#ibm-content #ibm-content-sidebar p.ibm-ind-link {
+	padding: 0;
+}
+
+ul.ibm-link-list li a {
+	height: 1%;
+}
+
+#ibm-content-sidebar ul.ibm-link-list li.ibm-first,
+#ibm-content-sidebar ul.ibm-link-list.ibm-alternate li {
+	border-top: 0 none;
+}
+
+ul.ibm-link-list li.ibm-first {
+	width: auto !important;
+}
+
+/* V17 Contact module style */
+#ibm-content #ibm-content-sidebar #ibm-contact-module .ibm-container,
+.ibm-landing-page #ibm-content .ibm-col-6-1 #ibm-contact-module .ibm-container{
+	border-top: 0 none !important;
+}
+#ibm-content #ibm-contact-module ul.ibm-alternate li,
+#ibm-content #ibm-contact-module ul.ibm-alternate li span,
+#ibm-content #ibm-contact-module ul.ibm-alternate li p span {
+	color: #444;
+}
+
+.ibm-landing-page #ibm-contact-module .ibm-live-assistance ul.ibm-alternate p{
+	margin-top: 2px;
+}
+
+#ibm-content-sidebar #ibm-contact-module ul.ibm-alternate p,
+#ibm-contact-module .ibm-live-assistance ul.ibm-alternate p{
+	margin-top: -4px;
+}
+.ibm-landing-page #ibm-contact-module .ibm-live-assistance div.ibm-portrait.ibm-alternate img{
+	position: absolute;
+}
+.ibm-landing-page #ibm-contact-module .ibm-live-assistance .ibm-live-assistance-list,
+.ibm-landing-page #ibm-contact-module .ibm-live-assistance ul.ibm-alternate{
+	/*position:relative;*/
+	margin-left: 75px;
+}
+
+/* End of v17 Contact module sytle */
+#ibm-content-sidebar .ibm-container.ibm-live-assistance .ibm-portrait {
+	min-height: 60px;
+}
+
+#ibm-content-sidebar .ibm-container.ibm-live-assistance .ibm-portrait.ibm-alternate {
+	min-height: 45px;
+}
+
+
+#ibm-content-sidebar .ibm-container.ibm-live-assistance .ibm-container-body div.ibm-portrait img,
+.ibm-landing-page .ibm-container.ibm-live-assistance .ibm-container-body div.ibm-portrait img {
+	display: inline;
+	float: left;
+	margin: 8px 10px 5px 0;
+}
+
+#ibm-content-sidebar ul.ibm-link-list li p.ibm-call-info {
+	padding-left: 20px !important;
+}
+
+#ibm-content ul.ibm-live-assistance-list {
+	clear: both;
+}
+
+#ibm-content ul.ibm-live-assistance-list a {
+	text-decoration: none;
+}
+
+.ibm-container-body p + ul.ibm-live-assistance-list {
+	padding-top: 0 !important;
+}
+
+.ibm-columns .ibm-col-5-1 ul.ibm-live-assistance-list {
+	line-height: 1.15em;
+}
+
+.ibm-container.ibm-live-assistance .ibm-container-body div.ibm-portrait p,
+.ibm-landing-page .ibm-container.ibm-live-assistance .ibm-container-body div.ibm-portrait.ibm-alternate p {
+	margin-left: 60px !important;
+	height: 1%;
+}
+
+.ibm-container.ibm-live-assistance .ibm-container-body div.ibm-portrait.ibm-alternate p {
+	margin-left: 46px !important;
+}
+
+#ibm-content-sidebar form.ibm-sidebar-form {
+	padding-top: 0;
+	padding-bottom: 12px;
+}
+#ibm-content-sidebar form.ibm-sidebar-form p {
+	padding-top: 5px !important;
+	padding-bottom: 0 !important;
+}
+/* features styles end ============================================== */

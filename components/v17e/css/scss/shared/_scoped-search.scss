@@ -1,0 +1,184 @@
+// scoped search styles begin ============================================
+
+/* SCOPED SEARCH JS */
+
+#ibm-scoped-search {
+	position: absolute;
+	z-index: 8;
+	padding: 5px 0px;
+	background: #D8D8D8;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#63686E', endColorstr='#1B2125');
+	background: -webkit-gradient(linear, left top, left bottom, from(#63686E), to(#1B2125));
+	background: -moz-linear-gradient(top,  #63686E,  #1B2125);
+	border: 5px solid #FFF;
+	@include border-radius(5px);
+	@include box-shadow(0 1px 5px rgba(0,0,0,0.4));
+	margin-top: 24px;
+	width: 215px;
+}
+#{$ie7Selector} #ibm-scoped-search {
+	margin-left: -222px;
+	margin-top: 24px;
+}
+#{$ie7Selector} #ibm-scoped-search li {
+	background: url(#{$imagePath}/i/search_scope_sprite.png) no-repeat 190px 7px;
+}
+#{$ie7Selector} #ibm-scoped-search li a.ibm-active {
+	background-color:#535353;
+	background: url(#{$imagePath}/i/search_scope_sprite.png) no-repeat 190px -12px #535353;
+}
+#{$ie7Selector} #ibm-scoped-search li a:hover {
+	background-color:#535353;
+}
+
+#ibm-universal-nav #ibm-scoped-search li a {
+    background: url(#{$imagePath}/i/search_scope_sprite.png) no-repeat 190px -14px;
+	padding: 5px 10px;
+	text-shadow: none;
+}
+
+#ibm-universal-nav #ibm-scoped-search li a.ibm-selected {
+	background: url(#{$imagePath}/i/search_scope_sprite.png) no-repeat 190px 4px;
+}
+
+
+#ibm-universal-nav #ibm-scoped-search li a.ibm-selected.ibm-active {
+	background: url(#{$imagePath}/i/search_scope_sprite.png) no-repeat  190px 3px ,-webkit-gradient(linear, left top, left bottom, from(#535353), to(#0D0D0D));
+	background: url(#{$imagePath}/i/search_scope_sprite.png) no-repeat  190px 3px ,-moz-linear-gradient(top,  #535353,  #0D0D0D);
+	background: url(#{$imagePath}/i/search_scope_sprite.png) no-repeat  190px 3px ,-o-linear-gradient(top,  #535353,  #0D0D0D);
+}
+
+#ibm-universal-nav #ibm-scoped-search li a.ibm-active {
+	color:#FFF;
+	padding: 4px 10px;
+	border-top: 1px solid rgba(255,255,255,0.8);
+	border-bottom: 1px solid rgba(255,255,255,0.8);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0E0E0E', endColorstr='#323232');
+	background: url(#{$imagePath}/i/search_scope_sprite.png) no-repeat  190px -16px ,-webkit-gradient(linear, left top, left bottom, from(#535353), to(#0D0D0D));
+	background: url(#{$imagePath}/i/search_scope_sprite.png) no-repeat  190px -16px ,-moz-linear-gradient(top,  #535353,  #0D0D0D);
+	background: url(#{$imagePath}/i/search_scope_sprite.png) no-repeat  190px -16px ,-o-linear-gradient(top,  #535353,  #0D0D0D);
+}
+
+#ibm-search.ibm-with-scoped-search {
+	/* show background icon with dropdown arrow */
+	background-position: -3px -40px;
+}
+
+#ibm-search-results {
+	display: none;
+	position: absolute;
+	margin-top: 28px !important;
+	float: left;
+	clear: both;
+	z-index: 11;
+	background-color: #333;
+	border: 1px solid #454545;
+	width: 340px;
+	height: auto;
+	padding-bottom: 20px;
+	right: 30px;
+	@include box-shadow(1px 1px 10px #000);
+	*margin-top: 7px !important;
+}
+
+#ibm-search-results #ibm-search-filter h2 {
+	display: inline;
+}
+#ibm-search-results #ibm-search-filter {
+	padding: 10px 15px;
+	text-align: right;	
+}
+
+#ibm-search-results h2,
+#ibm-search-results h3,
+#ibm-search-results p {
+	padding: 5px 15px 0 15px;
+	color: #CCC;
+}
+#ibm-search-results p a,
+#ibm-search-results h2,
+#ibm-search-results h3,
+#ibm-search-results li p {
+	-webkit-font-smoothing: antialiased;
+}
+
+#ibm-search-results	.ibm-portrait-module-list,
+#ibm-search-results	.ibm-thumbnail-list {
+	margin: 0px;
+	padding-bottom: 5px;
+}
+#ibm-search-results	.ibm-portrait-module-list:after,
+#ibm-search-results	.ibm-thumbnail-list:after {
+	@include aslett-clearing;
+}
+#ibm-search-results	.ibm-portrait-module-list li,
+#ibm-search-results	.ibm-thumbnail-list li {
+	display: block;
+	padding: 10px 15px;
+	float: left;
+}
+#ibm-search-results	.ibm-portrait-module-list h2,
+#ibm-search-results	.ibm-portrait-module-list h3,
+#ibm-search-results	.ibm-portrait-module-list p,
+#ibm-search-results	.ibm-thumbnail-list h2,
+#ibm-search-results	.ibm-thumbnail-list h3,
+#ibm-search-results	.ibm-thumbnail-list p {
+	padding: 0px;
+	margin-left: 60px;
+	height: 1%;
+}
+#ibm-search-results	.ibm-portrait-module-list p,
+#ibm-search-results	.ibm-thumbnail-list p {
+	padding-top: 3px;
+	color: #CCC;
+}
+#ibm-search-results	.ibm-portrait-module-list img,
+#ibm-search-results .ibm-thumbnail-list img {
+	float: left;
+	border: 1px solid #666\9;
+	outline: 1px solid rgba(255,255,255,.3);
+	outline-offset: -1px;
+}
+#ibm-search-results	.ibm-portrait-module-list span,
+#ibm-search-results .ibm-thumbnail-list span {
+	float: left;
+	@include box-shadow(1px 1px 3px #222);
+	display: block;
+}
+#ibm-search-results	a,
+#ibm-search-results	.ibm-portrait-module-list a,
+#ibm-search-results	.ibm-thumbnail-list a {
+	color: #FFF;
+	padding: 0px;
+	text-decoration: none;
+}
+#ibm-search-results	a:hover,
+#ibm-search-results	.ibm-portrait-module-list a:hover,
+#ibm-search-results	.ibm-thumbnail-list a:hover {
+	text-decoration: underline;
+}
+#ibm-search-results	.ibm-portrait-module-list li:hover,
+#ibm-search-results	.ibm-thumbnail-list li:hover {
+	background: rgba(0,0,0,0.2);
+	text-shadow: none;
+	filter: none;
+}
+#ibm-search-results	.ibm-portrait-module-list li:hover img,
+#ibm-search-results	.ibm-thumbnail-list li:hover img {
+	border: 1px solid #FFF;
+	margin: -1px;
+	margin: 0px\9;
+}
+#ibm-search-results	.ibm-portrait-module-list li:hover p,
+#ibm-search-results	.ibm-thumbnail-list li:hover p {
+	color: #FFF;
+}
+#ibm-search-results div.ibm-rule {
+	background: none;
+	margin: 0px;
+	height: 0px;
+	border-top: 1px solid #141414;
+	border-bottom: 1px solid #484848;
+}
+/* Search styles end */
+

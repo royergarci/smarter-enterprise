@@ -1,0 +1,506 @@
+// social toolbar styles begin ============================================
+
+/*
+ * Social toolbar icons that floats on the right hand side of the
+ * page...
+ */
+
+/* sbs Accessibility : HC mode */
+.dijit_a11y a[class^="ibm-share"][class$="email"] img.ibm-access {
+	left:-52px;
+	top:-52px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="print"] img.ibm-access {
+	left:-52px;
+	top:-130px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="delicious"] img.ibm-access {
+	left:-52px;
+	top: 0px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="digg"] img.ibm-access {
+	left:-52px;
+	top:-26px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="facebook"] img.ibm-access {
+	left:-52px;
+	top:-78px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="linkedin"] img.ibm-access {
+	left:-52px;
+	top:-104px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="twitter"] img.ibm-access {
+	left:-52px;
+	top:-156px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="dogear"] img.ibm-access {
+	left:-52px;
+	top:-182px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="stumble"] img.ibm-access {
+	left:-52px;
+	top:-208px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="yahoo-japan"] img.ibm-access {
+	left:-52px;
+	top: 0px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="hatena"] img.ibm-access {
+	left:-52px;
+	top:-26px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="livedoor"] img.ibm-access {
+	left:-52px;
+	top:-52px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="blip"] img.ibm-access {
+	left:-52px;
+	top:0px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="wykop"] img.ibm-access {
+	left:-52px;
+	top:-26px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="viadeo"] img.ibm-access {
+	left:-52px;
+	top:0px;
+	width:auto;
+}
+
+.dijit_a11y a[class^="ibm-share"][class$="email"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="email"]:focus img.ibm-access {
+	left:-78px;
+	top:-52px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="print"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="print"]:focus img.ibm-access {
+	left:-78px;
+	top:-130px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="delicious"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="delicious"]:focus img.ibm-access {
+	left:-78px;
+	top:0px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="digg"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="digg"]:focus img.ibm-access {
+	left:-78px;
+	top:-26px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="facebook"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="facebook"]:focus img.ibm-access {
+	left:-78px;
+	top:-78px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="linkedin"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="linkedin"]:focus img.ibm-access {
+	left:-78px;
+	top:-104px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="twitter"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="twitter"]:focus img.ibm-access {
+	left:-78px;
+	top:-156px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="dogear"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="dogear"]:focus img.ibm-access {
+	left:-78px;
+	top:-182px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="stumble"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="stumble"]:focus img.ibm-access {
+	left:-78px;
+	top:-208px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="yahoo-japan"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="yahoo-japan"]:focus img.ibm-access {
+	left:-78px;
+	top:0px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="hatena"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="hatena"]:focus img.ibm-access {
+	left:-78px;
+	top:-26px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="livedoor"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="livedoor"]:focus img.ibm-access {
+	left:-78px;
+	top:-52px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="blip"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="blip"]:focus img.ibm-access {
+	left:-78px;
+	top:0px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="wykop"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="wykop"]:focus img.ibm-access {
+	left:-78px;
+	top:-26px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="viadeo"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="viadeo"]:focus img.ibm-access {
+	left:-78px;
+	top:0px;
+	width:auto;
+}
+
+/* End of Highcontrast mode code */
+
+#ibm-social-tools {
+    position: absolute;
+    top: 160px;
+    right: 0px;
+    _right: -1px;
+    z-index: 500;
+    width: 25px;
+}
+
+#{$ie7Selector} #ibm-social-tools { 
+	position: fixed;
+}
+
+#ibm-social-tools ul {
+    padding: 0;
+    margin: 0;
+    width: 15px;
+    padding: 3px 6px 3px 3px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+    -webkit-box-shadow: 0px 0px 5px #888;
+    background-color: #fff;
+    background: -moz-linear-gradient(180deg, #e6e6e6 0, #fff 20%) no-repeat #fff;
+    border: 1px solid #fff;
+    border-right: 0;
+    float: right;
+    border-color: #aaa\9; /* IE 6,7,8 hack */
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity = 80)";
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-property: opacity;
+    -o-transition-duration: 0.5s;
+    -moz-transition-property: opacity;
+    -moz-transition-duration: 0.5s;
+}
+
+#ibm-social-tools ul:hover,
+#ibm-social-tools ul.ibm-active {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity = 100)";
+}
+
+#ibm-social-tools li {
+    padding: 0;
+    float: left;
+    padding: 2px 0;
+}
+
+#ibm-social-tools a {
+    display: block;
+    height: 16px;
+    width: 16px;
+    float: left;
+    /* we have now a text that we do not want to show */
+    text-indent: -9999px;
+	overflow: hidden;
+	padding: 0;
+}
+
+/* no active state */
+
+a[class^="ibm-share"], 
+ul:hover a[class^="ibm-share"],
+ul:hover a[class^="ibm-share"]:hover,
+ul a[class^="ibm-share"]:focus {
+	background: url(#{$imagePath}/i/icons/sprites-pt-all.png) no-repeat ;
+}
+
+a.ibm-share-email {
+	background-position: -52px -52px;
+}
+a.ibm-share-print{
+	background-position: -52px -130px;
+}
+a.ibm-share-delicious {
+	background-position: -52px 0;
+}
+a.ibm-share-digg {
+	background-position: -52px -26px;
+}
+a.ibm-share-facebook {
+	background-position: -52px -78px;
+}
+a.ibm-share-linkedin {
+	background-position: -52px -104px;
+}
+#{$ie7Selector} a.ibm-share-linkedin {
+	background-position: -52px -104px;
+}
+a.ibm-share-twitter {
+	background-position: -52px -156px;
+}
+a.ibm-share-dogear {
+	background-position: -52px -182px;
+}
+a.ibm-share-stumble {
+	background-position: -52px -208px;
+}
+a.ibm-share-googleplus {
+	background-position: -52px -234px;
+}
+
+
+/* #ibm-social-tools and .ibm-share-this ul:hover state */
+
+ul:hover a.ibm-share-email {
+	background-position: -26px -52px;
+}
+ul:hover a.ibm-share-print {
+	background-position: -26px -130px;
+}
+ul:hover a.ibm-share-delicious {
+	background-position: -26px 0;
+}
+ul:hover a.ibm-share-digg {
+	background-position: -26px -26px;
+}
+ul:hover a.ibm-share-facebook {
+	background-position: -26px -78px;
+}
+ul:hover a.ibm-share-linkedin {
+	background-position: -26px -104px;
+}
+ul:hover a.ibm-share-twitter {
+	background-position: -26px -156px;
+}
+ul:hover a.ibm-share-dogear {
+	background-position: -26px -182px;
+}
+ul:hover a.ibm-share-stumble {
+	background-position: -26px -208px;
+}
+ul:hover a.ibm-share-googleplus {
+	background-position: -26px -234px;
+}
+
+/* indivitual hover/focus state */
+
+ul:hover a.ibm-share-email:hover,
+ul a.ibm-share-email:focus {
+	background-position: -78px -52px;
+}
+ul:hover a.ibm-share-print:hover, 
+ul a.ibm-share-print:focus {
+	background-position: -78px -130px;
+}
+ul:hover a.ibm-share-delicious:hover, 
+ul a.ibm-share-delicious:focus {
+	background-position: -78px 0;
+}
+ul:hover a.ibm-share-digg:hover, 
+ul a.ibm-share-digg:focus {
+	background-position: -78px -26px;
+}
+ul:hover a.ibm-share-facebook:hover, 
+ul a.ibm-share-facebook:focus {
+	background-position: -78px -78px;
+}
+ul:hover a.ibm-share-linkedin:hover, 
+ul a.ibm-share-linkedin:focus {
+	background-position: -78px -104px;
+}
+ul:hover a.ibm-share-twitter:hover, 
+ul a.ibm-share-twitter:focus {
+	background-position: -78px -156px;
+}
+ul:hover a.ibm-share-dogear:hover, 
+ul a.ibm-share-dogear:focus {
+	background-position: -78px -182px;
+}
+ul:hover a.ibm-share-stumble:hover, 
+ul a.ibm-share-stumble:focus {
+	background-position: -78px -208px;
+}
+ul:hover a.ibm-share-googleplus:hover, 
+ul a.ibm-share-googleplus:focus {
+	background-position: -78px -234px;
+}
+
+/* dynamically added class on hover state */
+
+ul:hover a.ibm-share-active-email:hover {
+	background-position: 0 -52px;
+}
+ul:hover a.ibm-share-active-print:hover {
+	background-position: 0 -130px;
+}
+ul:hover a.ibm-share-active-delicious:hover {
+	background-position: 0 0;
+}
+ul:hover a.ibm-share-active-digg:hover {
+	background-position: 0 -26px;
+}
+ul:hover a.ibm-share-active-facebook:hover {
+	background-position: 0 -78px;
+}
+ul:hover a.ibm-share-active-linkedin:hover {
+	background-position: 0 -104px;
+}
+ul:hover a.ibm-share-active-twitter:hover {
+	background-position: 0 -156px;
+}
+ul:hover a.ibm-share-active-ibm-dogear:hover {
+	background-position: 0 -182px;
+}
+ul:hover a.ibm-share-active-stumble:hover {
+	background-position: 0 -208px;
+}
+ul:hover a.ibm-share-active-googleplus:hover {
+	background-position: 0 -234px;
+}
+
+/* share tool icons specific to PT PL and PT FR locale ================*/
+a.ibm-share-blip,
+a.ibm-share-wykop {
+background:url(#{$imagePath}/i/icons/sprites-pt-pl.png) no-repeat;
+}
+a.ibm-share-blip {background-position:-52px  0;}
+a.ibm-share-wykop {background-position: -52px -26px;}
+
+a.ibm-share-viadeo { background: url(#{$imagePath}/i/icons/sprites-pt-fr.png) no-repeat -52px 0;}
+
+ul:hover a[class^="ibm-share"][class$="blip"] {
+	background: url(#{$imagePath}/i/icons/sprites-pt-pl.png) no-repeat -26px 0;
+}
+ul:hover a[class^="ibm-share"][class$="wykop"] {
+	background: url(#{$imagePath}/i/icons/sprites-pt-pl.png) no-repeat -26px -26px;
+}
+ul:hover a[class^="ibm-share"][class$="viadeo"] {
+	background: url(#{$imagePath}/i/icons/sprites-pt-fr.png) no-repeat -26px 0;
+}
+
+ul:hover a[class^="ibm-share"][class$="blip"]:hover, 
+ul a[class^="ibm-share"][class$="blip"]:focus {
+	background: url(#{$imagePath}/i/icons/sprites-pt-pl.png) no-repeat -78px 0;
+}
+ul:hover a[class^="ibm-share"][class$="wykop"]:hover, 
+ul a[class^="ibm-share"][class$="wykop"]:focus {
+	background: url(#{$imagePath}/i/icons/sprites-pt-pl.png) no-repeat -78px -26px;
+}
+ul:hover a[class^="ibm-share"][class$="viadeo"]:hover, 
+ul a[class^="ibm-share"][class$="viadeo"]:focus {
+	background: url(#{$imagePath}/i/icons/sprites-pt-fr.png) no-repeat -78px 0;
+}
+ul:hover a[class$="active-blip"]:hover {
+	background: url(#{$imagePath}/i/icons/sprites-pt-pl.png) no-repeat 0 0;
+}
+ul:hover a[class$="active-wykop"]:hover {
+	background: url(#{$imagePath}/i/icons/sprites-pt-pl.png) no-repeat 0 -26px;
+}
+ul:hover a[class$="active-viadeo"]:hover {
+	background: url(#{$imagePath}/i/icons/sprites-pt-fr.png) no-repeat 0 0;
+}
+/* End of social tool icons specific to pt pl and pt-fr locale =====================*/
+
+
+/* social tool icons specific to Japan locale =====================*/
+a.ibm-share-yahoo-japan,
+a.ibm-share-hatena,
+a.ibm-share-livedoor,
+ul:hover a.ibm-share-yahoo-japan,
+ul:hover a.ibm-share-hatena,
+ul:hover a.ibm-share-livedoor,
+ul:hover a.ibm-share-yahoo-japan:hover,
+ul:hover a.ibm-share-hatena:hover,
+ul:hover a.ibm-share-livedoor:hover,
+ul a.ibm-share-yahoo-japan:focus,
+ul a.ibm-share-hatena:focus,
+ul a.ibm-share-livedoor:focus {
+	background: url(#{$imagePath}/i/icons/sprites-pt-jp.png) no-repeat;
+}
+
+a.ibm-share-yahoo-japan{ background-position:-52px 0;}
+a.ibm-share-hatena { background-position: -52px -26px;}
+a.ibm-share-livedoor { background-position: -52px -52px;}
+
+ul:hover a.ibm-share-yahoo-japan{ background-position:-26px 0;}
+ul:hover a.ibm-share-hatena{background-position:-26px -26px;}
+ul:hover a.ibm-share-livedoor{background-position:-26px -52px;}
+
+ul:hover a.ibm-share-yahoo-japan:hover, ul a.ibm-share-yahoo-japan:focus { background-position:-78px 0;}
+ul:hover a.ibm-share-hatena:hover, ul a.ibm-share-hatena:focus {background-position:-78px -26px;}
+ul:hover a.ibm-share-livedoor:hover, ul a.ibm-share-livedoor:focus{background-position:-78px -52px;}
+
+ul:hover a.ibm-share-active-yahoo-japan:hover{background-position: 0 0;}
+ul:hover a.ibm-share-active-hatena:hover {background-position: 0 -26px;}
+ul:hover a.ibm-share-active-livedoor:hover{background-position: 0 -52px;}
+
+/* End of social tool icons specific to Japan locale =====================*/
+
+/* Social tool icons specific to Pt CN locale =========================== */
+
+a.ibm-share-kaixn,
+a.ibm-share-renren,
+a.ibm-share-baidu,
+a.ibm-share-weibo,
+ul:hover a.ibm-share-kaixn,
+ul:hover a.ibm-share-renren,
+ul:hover a.ibm-share-baidu,
+ul:hover a.ibm-share-weibo,
+ul:hover a.ibm-share-kaixn:hover,
+ul:hover a.ibm-share-renren:hover,
+ul:hover a.ibm-share-baidu:hover,
+ul:hover a.ibm-share-weibo:hover,
+ul a.ibm-share-kaixn:focus,
+ul a.ibm-share-renren:focus,
+ul a.ibm-share-baidu:focus,
+ul a.ibm-share-weibo:focus {
+    background: url(#{$imagePath}/i/icons/sprites-pt-cn.png) no-repeat;
+}
+
+a.ibm-share-kaixn{background-position: -52px 0;}
+a.ibm-share-renren {background-position: -52px -26px;}
+a.ibm-share-baidu {background-position: -52px -52px;}
+a.ibm-share-weibo {background-position: -52px -78px;}
+ul:hover a.ibm-share-kaixn {background-position: -26px 0px;}
+ul:hover a.ibm-share-renren {background-position: -26px -26px;}
+ul:hover a.ibm-share-baidu  {background-position: -26px -52px;}
+ul:hover a.ibm-share-weibo {background-position: -26px -78px;}
+
+ul:hover a.ibm-share-kaixn:hover,ul a.ibm-share-kaixn:focus{ background-position: -78px 0;}
+ul:hover a.ibm-share-renren:hover,ul a.ibm-share-renren:focus {background-position: -78px -26px;}
+ul:hover a.ibm-share-baidu:hover,ul a.ibm-share-baidu:focus {background-position: -78px -52px;}
+ul:hover a.ibm-share-weibo:hover,ul a.ibm-share-weibo:focus {background-position: -78px -78px;}
+
+
+/* End of social tool icons specific to PT CN  locale =====================*/
+

@@ -1,0 +1,31 @@
+{
+  "name": "v17e",
+  "version": "0.0.3",
+  "homepage": "https://github.com/ibmmxlabs/v17e",
+  "authors": [
+    "Mike Cavaliere <mike@cavaliere.org>"
+  ],
+  "description": "lorem ipsum dolor sit amet.",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibmmxlabs/v17e.git"
+  },
+  "_release": "0.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.3",
+    "commit": "d75b39139b359c7bcef168baf354804a3afb63a7"
+  },
+  "_source": "https://github.com/ibmmxlabs/v17e.git",
+  "_target": "0.0.3",
+  "_originalSource": "https://github.com/ibmmxlabs/v17e.git",
+  "_direct": true
+}

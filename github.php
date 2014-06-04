@@ -3,7 +3,7 @@
   ini_set('display_startup_errors', 1);
   error_reporting(E_ALL);
 
-  define("GIT_BRANCH", "stripped");
+  define("GIT_BRANCH", "master");
 ?>
 
 <h2>Pulling from git repo.</h2>
